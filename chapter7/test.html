@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>Test</title>
+</head>
+<body>
+	<div id='testdiv'>
+		
+	</div>
+
+	<script type="text/javascript">
+	window.onload = function(){
+		var testdiv = document.getElementById('testdiv');
+		testdiv.innerHTML = '<p>This is inserted.</p>';
+
+		var para = document.createElement('p');
+		var info = 'nodeName';
+		info += 'para.nodeName';
+		info += ' nodeType ';
+		info += para.nodeType;
+		alert(info);
+
+		var text = document.createTextNode('This is p signature.');
+		testdiv.appendChild(para.appendChild(text));
+	}
+
+	</script>
+</body>
+</html>
